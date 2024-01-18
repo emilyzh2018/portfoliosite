@@ -7,6 +7,7 @@ import earth from "./fart.png"
 import ReactCardFlip from "react-card-flip";
 import { useState } from "react";
 import FlipCard from './FlipCard';
+import {HeroScrollDemo} from "./demoscroll";
 const HomePage = () => {
 
   const [isFlipped, setIsFlipped] = useState(false);
@@ -154,15 +155,21 @@ Events</span>
           <Link to="/AboutUsPage" className="learn-more-button">
             Learn More
           </Link>
+       
         </div>
+        
+        
       </div>
-      
-      <h1 className="text-6xl ml-10 text-white font-bold mb-4 ">What We Do</h1>
+      <HeroScrollDemo>
+        
+        </HeroScrollDemo>
+     
+      <h1 className="text-6xl ml-10 text-white font-bold mb-4 align-top">What We Do</h1>
 
     
-
+     
      {/* Grid of boxes */}
-     <div className="grid-container">
+     <div className="grid-container" style={{ marginBottom: '0px' }}>
       
      {cardInfo.map((card, index) => (
           <FlipCard
@@ -173,6 +180,7 @@ Events</span>
         ))}
    
       </div>
+     
     </div>
 </div>
 </div>

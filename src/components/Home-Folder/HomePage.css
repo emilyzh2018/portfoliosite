@@ -20,7 +20,7 @@
     height: auto; /* Maintain aspect ratio */
     position: absolute; /* Absolute position to the parent container */
     right: 0; /* Align to the right */
-    top: 50%; /* Center vertically */
+    top: 20%; /* Center vertically */
     transform: translateY(-50%) rotate(-14deg);; /* Adjust for half the image's height */
   }   
   
@@ -45,7 +45,7 @@
     border: none; /* Remove border */
     cursor: pointer; /* Cursor to pointer to indicate it's clickable */
     transition: border-color 0.3s; /* Smooth background transition for hover */
-    border-radius: 4px; /* Rounded corners for aesthetics */
+    border-radius: 25px; /* Rounded corners for aesthetics */
     border: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow:0 0 7px  rgb(237, 78, 255,0.8);/* Darken button color on hover */
     transition: box-shadow 0.3s ease-in-out;
@@ -76,9 +76,9 @@
     height: auto; /* Height to fit content */
     box-sizing: border-box; /* Include padding in the width calculation */
     padding-left:40px; /* For centering grid if needed */
+   
+    padding: 70px 100px 100px 40px; /* top right bottom left */
     margin-right: auto; /* For centering grid if needed */
-    padding-top: 70px;
-    padding: 100px;
   
    
   }
