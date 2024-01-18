@@ -37,7 +37,7 @@
     display: inline-block; /* Or block if you want it to be a block-level element */
     padding: 10px 20px; /* Add padding to increase the size */
     margin-top: 10vh;
-    margin-left: 105vh;
+    margin-left: 5vh;
     background-color: rgba(255, 74, 225, 0.4); /* Button color */
     color: #fff; /* Text color */
     text-decoration: none; /* Remove underline */
