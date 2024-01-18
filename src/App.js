@@ -11,8 +11,10 @@ import GetInvolvedPage from './components/Involved-Folder/GetInvolvedPage';
 import Layout from './Layout'
 import HomePage from './components/Home-Folder/HomePage';
 import SupportUs from './components/Support-Folder/SupportUs';
-import LandingPage from './components/LandingPage';
+import LandingPage from './components/Landing-Folder/LandingPage';
 import EventsPage from './components/Events-Folder/EventsPage';
+import SummerPrograms from './components/Blog-Folder/SummerPrograms';
+import AfterSchool from './components/Afterschool-Folder/AfterSchooler';
 function App() {
   function NavbarLayout({ children }) {
     return (
@@ -41,6 +43,8 @@ function App() {
           <Route path="/ContactUsPage" element={<NavbarLayout><ContactUsPage /></NavbarLayout>} />
           <Route path="/SupportUsPage"element={<NavbarLayout><SupportUs /></NavbarLayout>} />
           <Route path="/EventsPage"element={<NavbarLayout><EventsPage /></NavbarLayout>} />
+          <Route path="/SummerPrograms"element={<NavbarLayout><SummerPrograms /></NavbarLayout>} />
+          <Route path="/AfterSchool"element={<NavbarLayout><AfterSchool /></NavbarLayout>} />
           <Route path="/GetInvolvedPage" element={<GetInvolvedPage />} />
         </Routes>
 

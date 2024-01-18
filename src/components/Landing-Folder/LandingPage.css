@@ -1,20 +1,24 @@
 
 .landing-bg{
     width: 100%;
+    opacity: 90%;
     overflow: hidden;
     height: 100vh;
     position: relative;
-    background: #2a0318; background-image: radial-gradient(at 1.0% 35.0%, #52ba62 0px, transparent 50%),radial-gradient(at 14.0% 1.0%, hsl(342, 63%, 68%) 0px, transparent 50%),radial-gradient(at 36.0% 26.0%, hsl(24, 76%, 44%) 0px, transparent 50%),radial-gradient(at 44.0% 45.0%, hsl(358, 15%, 55%) 0px, transparent 50%),radial-gradient(at 94.0% 8.0%, hsl(298, 59%, 20%) 0px, transparent 50%)
+    background-image: linear-gradient( 111.4deg,  rgba(7,7,9,1) 6.5%, rgba(27,24,113,1) 93.2% );
+}
+.sleek-pic{
+    size: 100px;
 }
 .lets-go{
     color: rgb(255, 255, 255,0.8);
     font-style: oblique;
     padding: 10px;
     width: 10%;
-    background: rgba(14, 0, 66, 0.3);
+    background: rgb(32, 33, 37,0.5); 
     position: fixed;
     border-radius: 10px;
-    border: 1.5px solid rgba(255, 255, 255, 0.3);
+    border: 1.5px solid rgb(32, 33, 37); 
     bottom: 40%; /* Adjust the value as needed */
     right: 25%; /* Adjust the value as needed */
    /* box-shadow: 0 0 0px rgb(255, 255, 255);*/
@@ -24,4 +28,10 @@
 .lets-go:hover{
     border: 1px solid rgba(255, 255, 255, 0.7);
     box-shadow: 0 0 20px rgb(255, 255, 255,0.5);
+}
+.text-def{
+    color: rgb(255, 255, 255);
+    font-size:4rem; 
+    padding-left: 10%;
+    padding-bottom: 20%;
 }

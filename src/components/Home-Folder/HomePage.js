@@ -22,10 +22,7 @@ const HomePage = () => {
       ),
       back: (
         <>
-           <h3 class="text-xl font-semibold mb-5">
-  <span class="bg-gradient-to-r from-purple-200 to-pink-300 text-transparent bg-clip-text">Afterschool Programs</span>
-</h3>
-          <p>We are in the process of starting Spring afterschool programs at elementary and primary elementary schools!</p>
+            <h3><a class='text-default'href="/AfterSchool" >Learn More About This...</a></h3>
         </>
       ),
     },
@@ -40,8 +37,8 @@ const HomePage = () => {
       ),
       back: (
         <>
-          <h3>Back of Card 2</h3>
-          <p>PEE PEE POO PEE PEE POO PEE PEE POO PEE PEE POO PEE PEE POO PEE PEE POO PEE PEE POO PEE PEE POO PEE PEE POO PEE PEE POO </p>
+           <h3><a class='text-default'href="/SummerPrograms" >Learn More About This...</a></h3>
+       
         </>
       ),
     },
@@ -56,8 +53,7 @@ const HomePage = () => {
       ),
       back: (
         <>
-          <h3>Back of Card 3</h3>
-          <p>PEE PEE POO PEE PEE POO PEE PEE POO PEE PEE POO PEE PEE POO PEE PEE POO PEE PEE POO PEE PEE POO PEE PEE POO PEE PEE POO </p>
+           <h3><a class='text-default'href="/SummerPrograms" >Learn More About This...</a></h3>
         </>
       ),
     },
@@ -142,7 +138,9 @@ Events</span>
         </div>
 
         <div className="text-white px-12 text-left">
-          <h1 className="text-6xl font-bold mb-4 opacity-80">Climate Health Education Initiative</h1>
+ 
+          <h1 className="text-6xl font-bold mb-4 opacity-90" >Climate Health Education Initiative</h1>
+      
           <p className="text-lg ml-10 mb-6 pt-10 font-bold opacity-100">
           <Typewriter
                 onInit={(typewriter) => {

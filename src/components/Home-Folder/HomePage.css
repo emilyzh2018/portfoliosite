@@ -5,6 +5,7 @@
     
     position: relative;
   }
+
   
 
   .earthy {
@@ -46,6 +47,7 @@
     transition: border-color 0.3s; /* Smooth background transition for hover */
     border-radius: 4px; /* Rounded corners for aesthetics */
     border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow:0 0 7px  rgb(237, 78, 255,0.8);/* Darken button color on hover */
     transition: box-shadow 0.3s ease-in-out;
     transition: border 0.3s ease-in-out;
 }
