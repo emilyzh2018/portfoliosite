@@ -46,7 +46,7 @@ function App() {
           <Route path="/EventsPage"element={<NavbarLayout><EventsPage /></NavbarLayout>} />
           <Route path="/SummerPrograms"element={<NavbarLayout><SummerPrograms /></NavbarLayout>} />
           <Route path="/AfterSchool"element={<NavbarLayout><AfterSchool /></NavbarLayout>} />
-          <Route path="/GetInvolvedPage" element={<GetInvolvedPage />} />
+          <Route path="/GetInvolvedPage" element={<NavbarLayout><GetInvolvedPage /> </NavbarLayout>} />
         </Routes>
 
      </BrowserRouter>

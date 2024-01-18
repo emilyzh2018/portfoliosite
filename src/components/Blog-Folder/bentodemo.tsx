@@ -1,6 +1,7 @@
 import { cn } from "@/utils/cn";
 import React from "react";
 import { BentoGrid, BentoGridItem } from "../ui/bento-grid";
+
 import {
   IconArrowWaveRightUp,
   IconBoxAlignRightFilled,
@@ -28,7 +29,9 @@ export function BentoGridDemo() {
   );
 }
 const Skeleton = () => (
-  <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 dark:from-neutral-900 dark:to-neutral-800 to-neutral-100"></div>
+  <div className="pt-100">
+  <div className="flex flex-1 w-full h-full min-h-[6rem]rounded-xl bg-gradient-to-br from-neutral-200 dark:from-neutral-900 dark:to-neutral-800 to-neutral-100"></div>
+  </div>
 );
 const items = [
   {
