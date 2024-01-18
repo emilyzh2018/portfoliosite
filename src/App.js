@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+// App.js or index.js
+import React from 'react';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import TopNavbar from './components/TopNavbar';
+import './index.css';
+import ProductsPage from './components/Products-Folder/ProductsPage';
+import AboutUsPage from './components/About-Folder/AboutUsPage';
+import BlogPage from './components/Blog-Folder/BlogPage';
+import ContactUsPage from './components/Contact-Folder/ContactUsPage';
+import GetInvolvedPage from './components/Involved-Folder/GetInvolvedPage';
+import Layout from './Layout'
+import HomePage from './components/Home-Folder/HomePage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+    
+      <TopNavbar />
+     
+        <Routes>
+          <Route path="/" element={<HomePage/>} />
+          <Route path="/ProductsPage" element={<ProductsPage />} />
+          <Route path="/AboutUsPage" element={<AboutUsPage />} />
+          <Route path="/BlogPage" element={<BlogPage />} />
+          <Route path="/ContactUsPage" element={<ContactUsPage />} />
+          <Route path="/GetInvolvedPage" element={<GetInvolvedPage />} />
+        </Routes>
+
+     </BrowserRouter>
   );
 }
 

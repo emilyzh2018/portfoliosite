@@ -1,0 +1,96 @@
+
+.full-width-container {
+    width: 100%;
+    
+    position: relative;
+  }
+  
+
+  .earthy {
+    
+    opacity: 0.9;
+    
+  
+  
+    /* Use drop-shadow to apply a glow that follows the shape of the PNG */
+    filter: blur(0px) drop-shadow(0 0 10px  rgba(249, 165, 255, 0.7));
+    width: 60%; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    position: absolute; /* Absolute position to the parent container */
+    right: 0; /* Align to the right */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%) rotate(-14deg);; /* Adjust for half the image's height */
+  }   
+  
+  .align-right {
+    position: absolute;
+    right: 0px;
+    
+    transform: scaleX(-1);
+    top: 50%; /* Adjust if you want to change the vertical position */
+   /* This centers the image vertically */
+  }
+  
+  .learn-more-button {
+    display: inline-block; /* Or block if you want it to be a block-level element */
+    padding: 10px 20px; /* Add padding to increase the size */
+    margin-top: 10vh;
+    margin-left: 105vh;
+    background-color: #000; /* Button color */
+    color: #fff; /* Text color */
+    text-decoration: none; /* Remove underline */
+    text-align: center;
+    border: none; /* Remove border */
+    cursor: pointer; /* Cursor to pointer to indicate it's clickable */
+    transition: background-color 0.3s; /* Smooth background transition for hover */
+    border-radius: 4px; /* Rounded corners for aesthetics */
+  }
+  .learn-more-button:hover {
+    background-color: #333; /* Darken button color on hover */
+  }
+  html, body {
+    min-height: 100vh; /* Viewport height */
+    margin: 0;
+    overscroll-behavior: none;
+    padding: 0;
+  }
+
+  
+/* HomePage.css */
+.grid-container {
+    min-height:fit-content;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 40px; /* Space between grid items */
+    align-items: left; /* Align items to the start vertically */
+    justify-content: left; /* Align grid to the left side */
+    width: 50%; /* Grid takes up half the width of the page */
+
+    height: auto; /* Height to fit content */
+    box-sizing: border-box; /* Include padding in the width calculation */
+    padding-left:40px; /* For centering grid if needed */
+    margin-right: auto; /* For centering grid if needed */
+    padding-top: 70px;
+    padding: 100px;
+  
+   
+  }
+  
+  .grid-item { 
+    
+    perspective: 1000px;
+    max-height: 300px;
+    min-height: 300px;
+    width: 215px;
+    background-color: rgba(255, 255, 255, 0.1);
+    font-size: large;
+    padding: 15px;
+    border-radius: 6px;
+    color: rgba(255, 255, 255);
+    border: 1px solid rgba(249, 165, 255, 0.7);
+    box-shadow:0 0 10px rgb(255, 142, 229,0.3);
+    /* ... other styles ... */
+    height: auto; /* Height to fit content */
+
+  }
+  
