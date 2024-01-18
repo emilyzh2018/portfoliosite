@@ -19,7 +19,7 @@
     position: fixed;
     border-radius: 10px;
     border: 1.5px solid rgb(32, 33, 37); 
-    bottom: 40%; /* Adjust the value as needed */
+    bottom: 35%; /* Adjust the value as needed */
     right: 25%; /* Adjust the value as needed */
    /* box-shadow: 0 0 0px rgb(255, 255, 255);*/
     transition: box-shadow 0.3s ease-in-out ;

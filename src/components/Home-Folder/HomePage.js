@@ -14,7 +14,7 @@ const HomePage = () => {
     {
       front: (
         <>
-      <h3 class="text-xl font-semibold mb-5">
+      <h3 class="text-2xl font-semibold mb-5">
   <span class="bg-gradient-to-r from-purple-200 to-pink-300 text-transparent bg-clip-text">Afterschool Programs</span>
 </h3>
           <p>We are in the process of starting Spring afterschool programs at elementary and primary elementary schools!</p>
@@ -29,7 +29,7 @@ const HomePage = () => {
     {
       front: (
         <>
-            <h3 class="text-xl font-semibold mb-8">
+            <h3 class="text-2xl font-semibold mb-8">
   <span class="bg-gradient-to-r from-purple-200 to-pink-300 text-transparent bg-clip-text">Summer Camps</span>
 </h3>
           <p>Join us this summer for the Climate Health Education Initiative Summer Camp! We will have in person and virtual options.</p>
@@ -45,7 +45,7 @@ const HomePage = () => {
     {
       front: (
         <>
-         <h3 class="text-xl font-semibold mb-8">
+         <h3 class="text-2xl font-semibold mb-8">
   <span class="bg-gradient-to-r from-purple-200 to-pink-300 text-transparent bg-clip-text">Blog</span>
 </h3>
           <p>Check out our blog that features writing from our Writing and Newsletter Teams! </p>
@@ -60,7 +60,7 @@ const HomePage = () => {
     {
       front: (
         <>
-          <h3 class="text-xl font-semibold mb-8">
+          <h3 class="text-2xl font-semibold mb-8">
   <span class="bg-gradient-to-r from-purple-200 to-pink-300 text-transparent bg-clip-text">
 Social Media</span>
 </h3>
@@ -77,7 +77,7 @@ Social Media</span>
     {
       front: (
         <>
-         <h3 class="text-xl font-semibold mb-8">
+         <h3 class="text-2xl font-semibold mb-8">
   <span class="bg-gradient-to-r from-purple-200 to-pink-300 text-transparent bg-clip-text">
 Events</span>
 </h3>
@@ -94,7 +94,7 @@ Events</span>
     {
       front: (
         <>
-         <h3 class="text-xl font-semibold mb-6 ">
+         <h3 class="text-2xl font-semibold mb-6 ">
   <span class="bg-gradient-to-r from-purple-200 to-pink-300 text-transparent bg-clip-text">
   Fundraisers and donations</span>
 </h3>

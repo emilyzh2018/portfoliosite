@@ -2,6 +2,8 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import "./LandingPage.css";
 import sleek from "./sleek.png"; 
+import "./LandingPage.css"; 
+import {BackgroundBoxesDemo} from "./pee";
 const LandingPage = () => {
   let navigate = useNavigate();
 
@@ -11,17 +13,19 @@ const LandingPage = () => {
 
   return (
     
-    <div className="landing-bg">
-       <div class="flex items-center h-screen">
-    <h1 class="text-def">
-      Developed by Emily Zhao
-    </h1>
-</div>
+ 
+<BackgroundBoxesDemo>
 
-      <button className='lets-go' onClick={handleNewProcess}>Let's Go</button>
 
+<button className='lets-go' onClick={handleNewProcess}>Let's Go</button>
+
+  
+
+
+</BackgroundBoxesDemo>
+     
     
-    </div>
+ 
     
   );
 };

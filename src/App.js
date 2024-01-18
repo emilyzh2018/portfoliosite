@@ -15,6 +15,7 @@ import LandingPage from './components/Landing-Folder/LandingPage';
 import EventsPage from './components/Events-Folder/EventsPage';
 import SummerPrograms from './components/Blog-Folder/SummerPrograms';
 import AfterSchool from './components/Afterschool-Folder/AfterSchooler';
+import './styles/tailwind.css'; 
 function App() {
   function NavbarLayout({ children }) {
     return (
