@@ -109,8 +109,9 @@ Events</span>
       ),
       back: (
         <>
-          <h3>Back of Card 6</h3>
-          <p>PEE PEE POO PEE PEE POO PEE PEE POO PEE PEE POO PEE PEE POO PEE PEE POO PEE PEE POO PEE PEE POO PEE PEE POO PEE PEE POO .</p>
+        
+          <a href="/SupportUsPage">Click Here</a>
+        
         </>
       ),
     },

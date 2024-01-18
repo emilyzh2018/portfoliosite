@@ -10,6 +10,7 @@ import ContactUsPage from './components/Contact-Folder/ContactUsPage';
 import GetInvolvedPage from './components/Involved-Folder/GetInvolvedPage';
 import Layout from './Layout'
 import HomePage from './components/Home-Folder/HomePage';
+import SupportUs from './components/Support-Folder/SupportUs';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/AboutUsPage" element={<AboutUsPage />} />
           <Route path="/BlogPage" element={<BlogPage />} />
           <Route path="/ContactUsPage" element={<ContactUsPage />} />
+          <Route path="/SupportUsPage" element={<SupportUs />} />
           <Route path="/GetInvolvedPage" element={<GetInvolvedPage />} />
         </Routes>
 
