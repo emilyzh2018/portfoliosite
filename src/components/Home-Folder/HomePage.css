@@ -37,17 +37,21 @@
     padding: 10px 20px; /* Add padding to increase the size */
     margin-top: 10vh;
     margin-left: 105vh;
-    background-color: #000; /* Button color */
+    background-color: rgba(255, 74, 225, 0.4); /* Button color */
     color: #fff; /* Text color */
     text-decoration: none; /* Remove underline */
     text-align: center;
     border: none; /* Remove border */
     cursor: pointer; /* Cursor to pointer to indicate it's clickable */
-    transition: background-color 0.3s; /* Smooth background transition for hover */
+    transition: border-color 0.3s; /* Smooth background transition for hover */
     border-radius: 4px; /* Rounded corners for aesthetics */
-  }
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
+    transition: border 0.3s ease-in-out;
+}
   .learn-more-button:hover {
-    background-color: #333; /* Darken button color on hover */
+    border: 1px solid rgb(255, 255, 255,0.7);
+   box-shadow:0 0 10px  rgb(237, 78, 255);/* Darken button color on hover */
   }
   html, body {
     min-height: 100vh; /* Viewport height */
@@ -94,4 +98,16 @@
     height: auto; /* Height to fit content */
 
   }
-  
+  .text-default {
+    transition: text-shadow 0.2s ease-in;
+
+    /* Your custom style
+    s here */
+    color: rgb(255, 255, 255); /* Example property */
+    font-weight: bold; /* Example property */
+  }
+  .text-default:hover{
+    text-shadow:0 0 10px #fff;
+    
+
+  }

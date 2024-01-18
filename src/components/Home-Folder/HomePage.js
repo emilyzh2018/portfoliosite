@@ -109,8 +109,10 @@ Events</span>
       ),
       back: (
         <>
-        
-          <a href="/SupportUsPage">Click Here</a>
+      
+  <a class='text-default'href="/SupportUsPage" >Learn More About This...</a>
+
+       
         
         </>
       ),

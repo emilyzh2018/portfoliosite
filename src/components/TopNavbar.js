@@ -10,7 +10,7 @@ const TopNavbar = () => {
 
         {/* Navigation links with spacing */}
         <div className="hidden md:flex items-center space-x-4">
-          <Link to="/ProductsPage" className="text-white py-2 px-4 transition duration-300 ease-in-out hover:bg-blue-700 rounded-md">Products</Link>
+          <Link to="/ProjectsPage" className="text-white py-2 px-4 transition duration-300 ease-in-out hover:bg-blue-700 rounded-md">Projects</Link>
           <Link to="/AboutUsPage" className="text-white py-2 px-4 transition duration-300 ease-in-out hover:bg-blue-700 rounded-md">About Us</Link>
           <Link to="/BlogPage" className="text-white py-2 px-4 transition duration-300 ease-in-out hover:bg-blue-700 rounded-md">Blog</Link>
           <Link to="/ContactUsPage" className="text-white py-2 px-4 transition duration-300 ease-in-out hover:bg-blue-700 rounded-md">Contact Us</Link>
