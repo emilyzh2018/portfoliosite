@@ -149,7 +149,7 @@ Events</span>
                   typewriter.typeString('Democratizing environmental and public health education.').changeDelay(1).start();
                 }}
                 options={{
-                  delay: 50,
+                  delay: 70,
                 }}
               />
           </p>
