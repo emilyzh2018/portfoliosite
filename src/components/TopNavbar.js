@@ -6,7 +6,7 @@ const TopNavbar = () => {
     <nav className="fixed top-5 left-0 w-full z-10 bg-transparent">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo with a text gradient (you need to add custom styles for this) */}
-        <Link to="/" className="text-white text-xl font-bold">Your Logo</Link>
+        <Link to="/HomePage" className="text-white text-xl font-bold">Your Logo</Link>
 
         {/* Navigation links with spacing */}
         <div className="hidden md:flex items-center space-x-4">

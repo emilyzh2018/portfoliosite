@@ -12,6 +12,7 @@ import Layout from './Layout'
 import HomePage from './components/Home-Folder/HomePage';
 import SupportUs from './components/Support-Folder/SupportUs';
 import LandingPage from './components/LandingPage';
+import EventsPage from './components/Events-Folder/EventsPage';
 function App() {
   function NavbarLayout({ children }) {
     return (
@@ -39,7 +40,7 @@ function App() {
           <Route path="/BlogPage" element={<NavbarLayout><BlogPage /></NavbarLayout>} />
           <Route path="/ContactUsPage" element={<NavbarLayout><ContactUsPage /></NavbarLayout>} />
           <Route path="/SupportUsPage"element={<NavbarLayout><SupportUs /></NavbarLayout>} />
-          
+          <Route path="/EventsPage"element={<NavbarLayout><EventsPage /></NavbarLayout>} />
           <Route path="/GetInvolvedPage" element={<GetInvolvedPage />} />
         </Routes>
 

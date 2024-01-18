@@ -73,8 +73,8 @@ Social Media</span>
       ),
       back: (
         <>
-          <h3>Back of Card 4</h3>
-          <p>PEE PEE POO PEE PEE POO PEE PEE POO PEE PEE POO PEE PEE POO PEE PEE POO PEE PEE POO PEE PEE POO PEE PEE POO PEE PEE POO </p>
+          <h3><a class='text-default'href="https://www.instagram.com/climatehealthei/"  target="_blank"
+        rel="noreferrer" >Follow Our Instagram!</a></h3>
         </>
       ),
     },
@@ -90,8 +90,8 @@ Events</span>
       ),
       back: (
         <>
-          <h3>Back of Card 5</h3>
-          <p>PEE PEE POO PEE PEE POO PEE PEE POO PEE PEE POO PEE PEE POO PEE PEE POO PEE PEE POO PEE PEE POO PEE PEE POO PEE PEE POO </p>
+          <h3><a class='text-default'href="/EventsPage" >Learn More About This...</a></h3>
+         
         </>
       ),
     },
@@ -149,7 +149,7 @@ Events</span>
                   typewriter.typeString('Democratizing environmental and public health education.').changeDelay(1).start();
                 }}
                 options={{
-                  delay: 70,
+                  delay: 50,
                 }}
               />
           </p>
