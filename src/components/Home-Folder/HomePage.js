@@ -138,7 +138,7 @@ Events</span>
 
         {/* Content that should be centered in the viewport */}
        <div className='earthy'>
-        <img  src={earth} className="earthy align-right" alt="Logo" />;
+        <img  src={earth} className="earthy align-right" alt="Logo" />
         </div>
 
         <div className="text-white px-12 text-left">
