@@ -3,8 +3,9 @@ import { Link } from 'react-router-dom';
 
 const TopNavbar = () => {
   return (
-    <nav className="fixed top-5 left-0 w-full z-10 bg-transparent">
-      <div className="container mx-auto flex justify-between items-center">
+   
+    <nav className="fixed top-0 left-0 w-full z-10 bg-white bg-opacity-0 backdrop-blur shadow-md shadow-white/10">
+      <div className="container mx-auto flex justify-between items-center py-3">
         {/* Logo with a text gradient (you need to add custom styles for this) */}
         <Link to="/HomePage" className="text-white text-xl font-bold">Your Logo</Link>
 
