@@ -17,7 +17,7 @@ const LandingPage = () => {
 <BackgroundBoxesDemo>
 
 
-<button className='lets-go' onClick={handleNewProcess}>Let's Go</button>
+
 
   
 
