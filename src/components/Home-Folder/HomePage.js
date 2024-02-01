@@ -16,7 +16,7 @@ const HomePage = () => {
       front: (
         <>
       <h3 class="text-2xl font-semibold mb-5">
-  <span class="bg-gradient-to-r from-purple-200 to-pink-300 text-transparent bg-clip-text">Afterschool Programs</span>
+  <span class="bg-gradient-to-r from-black to-pink-300 text-transparent bg-clip-text">Afterschool Programs</span>
 </h3>
           <p>We are in the process of starting Spring afterschool programs at elementary and primary elementary schools!</p>
         </>
@@ -121,7 +121,7 @@ Events</span>
 
 
     <div className="full-width-container"> 
-    <div className="bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-black via-indigo-800 to-fuchsia-900 overflow-hidden">
+    <div className="bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-black via-grey-800 to-purple-200 overflow-hidden">
       <div className="page-container">
 
 
@@ -140,12 +140,12 @@ Events</span>
 
         <div className="text-white px-12 text-left">
  
-          <h1 className="text-6xl font-bold mb-4 opacity-90" >Climate Health Education Initiative</h1>
+          <h1 className="text-6xl font-bold mb-4 opacity-90" >Emily Zhao's Website</h1>
       
           <p className="text-lg ml-10 mb-6 pt-10 font-bold opacity-100">
           <Typewriter
                 onInit={(typewriter) => {
-                  typewriter.typeString('Democratizing environmental and public health education.').changeDelay(1).start();
+                  typewriter.typeString('Computer Science Student and aspiring Software Engineer').changeDelay(1).start();
                 }}
                 options={{
                   delay: 70,
