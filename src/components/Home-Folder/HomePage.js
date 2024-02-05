@@ -121,7 +121,7 @@ Events</span>
 
 
     <div className="full-width-container"> 
-    <div className="bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-black via-grey-800 to-purple-200 overflow-hidden">
+    <div className="bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-black via-indigo-500 to-black overflow-hidden">
       <div className="page-container">
 
 
@@ -142,7 +142,7 @@ Events</span>
  
           <h1 className="text-6xl font-bold mb-4 opacity-90" >Emily Zhao's Website</h1>
       
-          <p className="text-lg ml-10 mb-6 pt-10 font-bold opacity-100">
+          <p className="text-lg mb-6 pt-10 font-bold opacity-100">
           <Typewriter
                 onInit={(typewriter) => {
                   typewriter.typeString('Computer Science Student and aspiring Software Engineer').changeDelay(1).start();

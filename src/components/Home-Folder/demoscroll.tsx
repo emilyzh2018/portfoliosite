@@ -10,9 +10,9 @@ export function HeroScrollDemo() {
         titleComponent={
           <>
             <h1 className="text-4xl font-semibold text-black dark:text-white">
-              Welcome <br />
+              Relevant <br />
               <span className="text-4xl md:text-[6rem] font-bold mt-1 leading-none">
-                Scroll Animations
+                Coursework
               </span>
             </h1>
           </>
@@ -24,117 +24,63 @@ export function HeroScrollDemo() {
 
 export const users = [
   {
-    name: "Manu Arora",
-    designation: "Founder, Algochurn",
+    name: "Discrete Math",
+    designation: "CMSC250",
     image: "https://picsum.photos/id/10/300/300",
     badge: "Mentor",
   },
   {
-    name: "Sarah Singh",
-    designation: "Founder, Sarah's Kitchen",
+    name: "Linear Algebra",
+    designation: "MATH240",
     image: "https://picsum.photos/id/11/300/300",
     badge: "Mentor",
   },
   {
-    name: "John Doe",
-    designation: "Software Engineer, Tech Corp",
+    name: "Object Oriented Programming 1",
+    designation: "CMSC131",
     image: "https://picsum.photos/id/12/300/300",
     badge: "Mentor",
   },
   {
-    name: "Jane Smith",
-    designation: "Product Manager, Innovate Inc",
+    name: "Object Oriented Programming 1",
+    designation: "CMSC132",
     image: "https://picsum.photos/id/13/300/300",
     badge: "Mentor",
   },
   {
-    name: "Robert Johnson",
-    designation: "Data Scientist, DataWorks",
+    name: "Computer Systems",
+    designation: "CMSC216",
     image: "https://picsum.photos/id/14/300/300",
     badge: "Mentor",
   },
   {
-    name: "Emily Davis",
-    designation: "UX Designer, DesignHub",
+    name: "Statistics and Probability",
+    designation: "STAT400",
     image: "https://picsum.photos/id/15/300/300",
     badge: "Mentor",
   },
   {
-    name: "Michael Miller",
-    designation: "CTO, FutureTech",
+    name: "Organization of Programming Languages",
+    designation: "CMSC330",
     image: "https://picsum.photos/id/16/300/300",
     badge: "Mentor",
   },
   {
-    name: "Sarah Brown",
-    designation: "CEO, StartUp",
+    name: "Algorithms",
+    designation: "CMSC351",
     image: "https://picsum.photos/id/17/300/300",
   },
   {
-    name: "James Wilson",
-    designation: "DevOps Engineer, CloudNet",
+    name: "Advanced Data Structures",
+    designation: "CMSC420",
     image: "https://picsum.photos/id/18/300/300",
     badge: "Something",
   },
   {
-    name: "Patricia Moore",
-    designation: "Marketing Manager, MarketGrowth",
+    name: "Data Science",
+    designation: "CMSC320",
     image: "https://picsum.photos/id/19/300/300",
     badge: "Mentor",
   },
-  {
-    name: "Richard Taylor",
-    designation: "Frontend Developer, WebSolutions",
-    image: "https://picsum.photos/id/20/300/300",
-  },
-  {
-    name: "Linda Anderson",
-    designation: "Backend Developer, ServerSecure",
-    image: "https://picsum.photos/id/21/300/300",
-  },
-  {
-    name: "William Thomas",
-    designation: "Full Stack Developer, FullStack",
-    image: "https://picsum.photos/id/22/300/300",
-    badge: "Badger",
-  },
-  {
-    name: "Elizabeth Jackson",
-    designation: "Project Manager, ProManage",
-    image: "https://picsum.photos/id/23/300/300",
-    badge: "Mentor",
-  },
-  {
-    name: "David White",
-    designation: "Database Administrator, DataSafe",
-    image: "https://picsum.photos/id/24/300/300",
-    badge: "Advocate",
-  },
-  {
-    name: "Jennifer Harris",
-    designation: "Network Engineer, NetConnect",
-    image: "https://picsum.photos/id/25/300/300",
-  },
-  {
-    name: "Charles Clark",
-    designation: "Security Analyst, SecureIT",
-    image: "https://picsum.photos/id/26/300/300",
-  },
-  {
-    name: "Susan Lewis",
-    designation: "Systems Analyst, SysAnalyse",
-    image: "https://picsum.photos/id/27/300/300",
-  },
-  {
-    name: "Joseph Young",
-    designation: "Mobile Developer, AppDev",
-    image: "https://picsum.photos/id/28/300/300",
-    badge: "Mentor",
-  },
-  {
-    name: "Margaret Hall",
-    designation: "Quality Assurance, BugFree",
-    image: "https://picsum.photos/id/29/300/300",
-    badge: "Developer",
-  },
+  
 ];
