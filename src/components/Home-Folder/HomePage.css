@@ -69,13 +69,13 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 columns */
     gap: 40px; /* Space between grid items */
-    align-items: left; /* Align items to the start vertically */
+    align-items: center; /* Align items to the start vertically */
     justify-content: left; /* Align grid to the left side */
     width: 50%; /* Grid takes up half the width of the page */
 
     height: auto; /* Height to fit content */
     box-sizing: border-box; /* Include padding in the width calculation */
-    padding-left:40px; /* For centering grid if needed */
+    /* For centering grid if needed */
    
     padding: 70px 100px 100px 40px; /* top right bottom left */
     margin-right: auto; /* For centering grid if needed */

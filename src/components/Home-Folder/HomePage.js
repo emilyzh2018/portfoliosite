@@ -8,6 +8,8 @@ import ReactCardFlip from "react-card-flip";
 import { useState } from "react";
 import FlipCard from './FlipCard';
 import {HeroScrollDemo} from "./demoscroll";
+import { Spotlight } from "../ui/Spotlight";
+import { BackgroundGradient } from "../ui/background-gradient";
 const HomePage = () => {
 
   const [isFlipped, setIsFlipped] = useState(false);
@@ -117,16 +119,23 @@ Events</span>
   ];
   
   return (
+    
 
 
 
     <div className="full-width-container"> 
-    <div className="bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-black via-indigo-500 to-black overflow-hidden">
+     
+     
+    <div className="bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-black via-grey-900 to-black overflow-hidden">
+   
       <div className="page-container">
+      <Spotlight
+        className="-top-40 left-0 md:left-10 md:-top-20"
+        fill="white"
+      />
 
 
-
-
+     
 
       <div className="flex flex-col justify-center items-center min-h-screen">
 
@@ -134,14 +143,12 @@ Events</span>
       
 
         {/* Content that should be centered in the viewport */}
-       <div className='earthy'>
-        <img  src={earth} className="earthy align-right" alt="Logo" />
-        </div>
+       
 
         <div className="text-white px-12 text-left">
- 
-          <h1 className="text-6xl font-bold mb-4 opacity-90" >Emily Zhao's Website</h1>
       
+          <h1 className="text-6xl font-bold mb-4 opacity-90" >Emily Zhao's Website</h1>
+        
           <p className="text-lg mb-6 pt-10 font-bold opacity-100">
           <Typewriter
                 onInit={(typewriter) => {
@@ -160,6 +167,7 @@ Events</span>
         
         
       </div>
+      
       <HeroScrollDemo>
         
         </HeroScrollDemo>
@@ -169,6 +177,7 @@ Events</span>
     
      
      {/* Grid of boxes */}
+
      <div className="grid-container" style={{ marginBottom: '0px' }}>
       
      {cardInfo.map((card, index) => (
