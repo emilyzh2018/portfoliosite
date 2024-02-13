@@ -5,7 +5,8 @@ import { ContainerScroll } from "../ui/container-scroll-animation";
 export function HeroScrollDemo() {
   return (
     <div className="flex flex-col overflow-hidden">
-      <ContainerScroll
+      <ContainerScroll 
+
         users={users}
         titleComponent={
           <>
@@ -79,7 +80,7 @@ export const users = [
   {
     name: "Data Science",
     designation: "CMSC320",
-    image: "https://img.freepik.com/free-photo/abstract-textured-backgound_1258-30471.jpg?w=1060&t=st=1707775601~exp=1707776201~hmac=89fd8d673922c9de70d6ec377dc324948e29c82f9444a2b050f8ca45f2d6df04",
+    image: "https://media.istockphoto.com/id/475449058/vector/gradient-background.jpg?s=612x612&w=0&k=20&c=dRm_BCbhW6rRNLcOxgfMBjBK8j3KLsbiE-obBxumcSc=",
     badge: "Mentor",
   },
   
