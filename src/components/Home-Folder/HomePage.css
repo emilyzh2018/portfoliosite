@@ -1,10 +1,11 @@
 
 .full-width-container {
-    width: 100%;
+    min-width: 100%;
     overflow: hidden;
     
     position: relative;
-    overflow-x: auto; 
+  
+ 
   }
 
   
@@ -68,10 +69,11 @@
   
 /* HomePage.css */
 .grid-container {
-  
+  overflow-x: auto;
     min-height:fit-content;
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /*grid-template-columns: repeat(3, 1fr); /* 3 columns */
     gap: 50px; /* Space between grid items */
     align-items: center; /* Align items to the start vertically */
      /* Align grid to the left side */
@@ -89,8 +91,9 @@
   }
   
   .grid-item { 
-
-    overflow:auto;
+    
+    overflow-x: auto;
+    min-width:fit-content;
     perspective: 1000px;
     max-height: 300px;
     min-height: 300px;
