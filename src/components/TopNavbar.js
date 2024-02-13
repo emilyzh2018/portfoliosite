@@ -5,7 +5,7 @@ const TopNavbar = () => {
   return (
    
     <nav className="fixed top-0 left-0 w-full z-10 bg-white bg-opacity-0 backdrop-blur-lg ">
-      <div className="container mx-auto flex justify-between items-center py-1">
+      <div className="container mx-auto flex flex-wrap justify-between items-center py-1">
         {/* Logo with a text gradient (you need to add custom styles for this) */}
         <Link to="/" className="text-white text-xl font-bold transition duration-300 ease-in-out hover:text-blue-700">Home</Link>
 
