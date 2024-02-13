@@ -4,7 +4,7 @@ import {BentoGridDemo} from "./bentodemo";
 const BlogPage = () => {
   return (
     <div>
-      <div className='bg-red-100'>
+      <div className='bg-black'>
       <div className="pt-20">
     <BentoGridDemo />
     </div>

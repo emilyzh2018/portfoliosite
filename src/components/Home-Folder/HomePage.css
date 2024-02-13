@@ -65,33 +65,35 @@
   
 /* HomePage.css */
 .grid-container {
+  
     min-height:fit-content;
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 columns */
-    gap: 40px; /* Space between grid items */
+    gap: 50px; /* Space between grid items */
     align-items: center; /* Align items to the start vertically */
-    justify-content: left; /* Align grid to the left side */
+     /* Align grid to the left side */
     width: 50%; /* Grid takes up half the width of the page */
 
     height: auto; /* Height to fit content */
     box-sizing: border-box; /* Include padding in the width calculation */
     /* For centering grid if needed */
    
-    padding: 70px 100px 100px 40px; /* top right bottom left */
-    margin-right: auto; /* For centering grid if needed */
+    padding:0; /* top right bottom left */
+    margin-left: auto; /* Centering grid horizontally */
+    margin-right: auto;  /* For centering grid if needed */
   
    
   }
   
   .grid-item { 
-    
+    overflow:auto;
     perspective: 1000px;
     max-height: 300px;
     min-height: 300px;
-    width: 215px;
+    width: 100%;
     background-color: rgba(255, 255, 255, 0.1);
     font-size: large;
-    padding: 15px;
+    padding: 20px;
     border-radius: 10px;
     color: rgba(255, 255, 255);
     border: 1px solid rgba(249, 165, 255, 0.7);

@@ -1,5 +1,5 @@
 // BlogPage.js
-import React from 'react';
+import React , { useEffect }from 'react';
 import { Link } from 'react-router-dom';
 import "./HomePage.css"
 import Typewriter from "typewriter-effect";
@@ -10,7 +10,18 @@ import FlipCard from './FlipCard';
 import {HeroScrollDemo} from "./demoscroll";
 import { Spotlight } from "../ui/Spotlight";
 import { BackgroundGradient } from "../ui/background-gradient";
+import { useLocation } from 'react-router-dom';
 const HomePage = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash === '#about-me') {
+      const aboutMeSection = document.getElementById('about-me');
+      if (aboutMeSection) {
+        aboutMeSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, [location]);
 
   const [isFlipped, setIsFlipped] = useState(false);
   const cardInfo = [
@@ -18,7 +29,7 @@ const HomePage = () => {
       front: (
         <>
       <h3 class="text-2xl font-semibold mb-5">
-  <span class="bg-gradient-to-r from-black to-pink-300 text-transparent bg-clip-text">Afterschool Programs</span>
+  <span class="bg-gradient-to-r from-white to-pink-300 text-transparent bg-clip-text">Afterschool Programs</span>
 </h3>
           <p>We are in the process of starting Spring afterschool programs at elementary and primary elementary schools!</p>
         </>
@@ -129,10 +140,7 @@ Events</span>
     <div className="bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-black via-grey-900 to-black overflow-hidden">
    
       <div className="page-container">
-      <Spotlight
-        className="-top-40 left-0 md:left-10 md:-top-20"
-        fill="white"
-      />
+     
 
 
      
@@ -150,6 +158,7 @@ Events</span>
           <h1 className="text-6xl font-bold mb-4 opacity-90" >Emily Zhao's Website</h1>
         
           <p className="text-lg mb-6 pt-10 font-bold opacity-100">
+            
           <Typewriter
                 onInit={(typewriter) => {
                   typewriter.typeString('Computer Science Student and aspiring Software Engineer').changeDelay(1).start();
@@ -164,21 +173,19 @@ Events</span>
           </Link>
        
         </div>
+       
         
         
-      </div>
+      </div >
       
-      <HeroScrollDemo>
-        
-        </HeroScrollDemo>
-     
-      <h1 className="text-6xl ml-10 text-white font-bold mb-4 align-top">What We Do</h1>
+    <div id="about-me">
+      <h1 className="text-6xl ml-10 text-white font-bold mb-10 align-top">Stuff About Me</h1>
 
     
      
      {/* Grid of boxes */}
 
-     <div className="grid-container" style={{ marginBottom: '0px' }}>
+     <div className="grid-container " >
       
      {cardInfo.map((card, index) => (
           <FlipCard
@@ -189,7 +196,12 @@ Events</span>
         ))}
    
       </div>
-     
+      <div >
+      <HeroScrollDemo>
+        
+        </HeroScrollDemo>
+        </div>
+        </div>
     </div>
 </div>
 </div>

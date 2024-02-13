@@ -36,8 +36,8 @@ function App() {
         <Routes>
    
         {/* Nesting the other routes under a common layout route */}
-        <Route path="/" element={<LandingPage />} />
-          <Route path="/HomePage"element={<NavbarLayout><HomePage /></NavbarLayout>} />
+     
+          <Route path="/"element={<NavbarLayout><HomePage /></NavbarLayout>} />
           <Route path="/ProjectsPage" element={<NavbarLayout><ProjectsPage /></NavbarLayout>} />
           <Route path="/AboutUsPage" element={<NavbarLayout><AboutUsPage /></NavbarLayout>} />
           <Route path="/BlogPage" element={<NavbarLayout><BlogPage /></NavbarLayout>} />
