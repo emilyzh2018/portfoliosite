@@ -168,7 +168,7 @@ Events</span>
                 }}
               />
           </p>
-          <Link to="/AboutUsPage" className="learn-more-button">
+          <Link to="/#about-me" className="learn-more-button">
             Learn More
           </Link>
        

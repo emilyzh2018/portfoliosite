@@ -4,6 +4,7 @@
     overflow: hidden;
     
     position: relative;
+    overflow-x: auto; 
   }
 
   
@@ -56,10 +57,12 @@
    box-shadow:0 0 10px  rgb(237, 78, 255);/* Darken button color on hover */
   }
   html, body {
+    overflow-x: auto; 
     min-height: 100vh; /* Viewport height */
     margin: 0;
     overscroll-behavior: none;
     padding: 0;
+    
   }
 
   
@@ -86,6 +89,7 @@
   }
   
   .grid-item { 
+
     overflow:auto;
     perspective: 1000px;
     max-height: 300px;
