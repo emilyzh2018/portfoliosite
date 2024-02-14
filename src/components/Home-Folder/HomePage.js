@@ -116,7 +116,7 @@ Career Interests</span>
       ),
       back: (
         <>
-          <h3><a class='text-default'href="/ProjectsPage" >My Resume</a></h3>
+          <h3><a class='text-default'href="/Resume" >My Resume</a></h3>
          
         </>
       ),
