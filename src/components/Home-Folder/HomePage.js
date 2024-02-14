@@ -16,15 +16,12 @@ import mercy from './mercy.webp';
 import { Size } from '@tsparticles/engine';
 const HomePage = () => {
   const location = useLocation();
-  const [flippedStatus, setFlippedStatus] = useState(new Array(6).fill(false));
+  const [isFlippedArray, setIsFlippedArray] = useState(new Array(6).fill(false));
 
   const handleCardClick = (index) => {
-    // Create a new array with all current statuses
-    const newFlippedStatus = [...flippedStatus];
-    // Toggle the flipped status for the clicked card
-    newFlippedStatus[index] = !newFlippedStatus[index];
-    // Update the state with the new array
-    setFlippedStatus(newFlippedStatus);
+    const flippedArrayCopy = [...isFlippedArray]; // Make a copy of the array
+    flippedArrayCopy[index] = !flippedArrayCopy[index]; // Toggle the flipped state for the clicked card
+    setIsFlippedArray(flippedArrayCopy); // Update the state
   };
   useEffect(() => {
     if (location.hash === '#about-me') {
@@ -207,12 +204,15 @@ My Linkedin</span>
      <div className="grid-container " >
       
      {cardInfo.map((card, index) => (
+      <div key={index} >
           <FlipCard
-            key={index}
-            frontText={card.front}
-            backText={card.back}
-            className={`${flippedStatus[index] ? '' : 'hover-effect'} ${card.className || ''}`}
+         
+         frontText={card.front}
+         backText={card.back}
+         isFlipped={isFlippedArray[index]}
+         handleClick={() => handleCardClick(index)} 
           />
+           </div>
         ))}
    
       </div>

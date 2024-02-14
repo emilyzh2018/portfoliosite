@@ -96,7 +96,7 @@
   }
   
   .grid-item { 
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transition for transform and box-shadow */
+     /* Transition for transform and box-shadow */
   /* ... other styles ... */
     position: relative;
     overflow: hidden; 
@@ -117,10 +117,14 @@
     height: auto; /* Height to fit content */
 
   }
-  .grid-item:hover {
+  .grid-combo{
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  .grid-combo:hover {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
     transform: translateY(-10px) rotate(-3deg); /* Moves the card up and rotates it a bit */
   }
+  
   
   .text-default {
     transition: text-shadow 0.2s ease-in;
@@ -134,5 +138,9 @@
     text-shadow:0 0 10px #fff;
     
 
+  }
+  .no-hover:hover {
+    transform: none;
+    box-shadow: none;
   }
  
