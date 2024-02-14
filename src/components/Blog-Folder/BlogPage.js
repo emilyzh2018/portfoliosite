@@ -1,7 +1,7 @@
 // BlogPage.js
 import React from 'react';
 import {BentoGridDemo} from "./bentodemo"; 
-const BlogPage = () => {
+const Projects = () => {
   return (
     <div>
       <div className='bg-black'>
@@ -14,4 +14,4 @@ const BlogPage = () => {
   );
 };
 
-export default BlogPage;
+export default Projects;

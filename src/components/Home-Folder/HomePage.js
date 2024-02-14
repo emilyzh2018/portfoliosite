@@ -45,7 +45,8 @@ const HomePage = () => {
       ),
       back: (
         <>
-            <h3><a class='text-default'href="/AfterSchool" >Learn More About This...</a></h3>
+            <h3><a class='text-default'href="https://umd.edu/"  target="_blank"
+        rel="noreferrer">Learn More About This...</a></h3>
         </>
       ),
     },
@@ -115,7 +116,7 @@ Career Interests</span>
       ),
       back: (
         <>
-          <h3><a class='text-default'href="/BlogPage" >My Resume</a></h3>
+          <h3><a class='text-default'href="/ProjectsPage" >My Resume</a></h3>
          
         </>
       ),

@@ -11,11 +11,11 @@ const TopNavbar = () => {
 
         {/* Navigation links with spacing */}
         <div className="hidden md:flex items-center space-x-4">
-          <Link to="/ProjectsPage" className="text-white py-2 px-4 transition duration-300 ease-in-out hover:text-blue-700 rounded-md">Resume</Link>
+          <Link to="/BlogPage" className="text-white py-2 px-4 transition duration-300 ease-in-out hover:text-blue-700 rounded-md">My Projects</Link>
           <Link to="/#about-me" className="text-white py-2 px-4 transition duration-300 ease-in-out hover:text-blue-700 rounded-md" >About Me</Link>
 
           
-          <Link to="/BlogPage" className="text-white py-2 px-4 transition duration-300 ease-in-out hover:text-blue-700 rounded-md">My Projects</Link>
+          <Link to="/ProjectsPage" className="text-white py-2 px-4 transition duration-300 ease-in-out hover:text-blue-700 rounded-md">Resume</Link>
           <Link to="/ContactUsPage" className="text-white py-2 px-4 transition duration-300 ease-in-out hover:text-blue-700 rounded-md">My Socials</Link>
           <Link to="/GetInvolvedPage" className="text-white py-2 px-4 transition duration-300 ease-in-out hover:text-blue-700 rounded-md">Contact Me</Link>
         </div>
