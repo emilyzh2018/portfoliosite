@@ -11,9 +11,21 @@ import {HeroScrollDemo} from "./demoscroll";
 import { Spotlight } from "../ui/Spotlight";
 import { BackgroundGradient } from "../ui/background-gradient";
 import { useLocation } from 'react-router-dom';
+import yomen from './yomm.jpg';
+import mercy from './mercy.webp';
+import { Size } from '@tsparticles/engine';
 const HomePage = () => {
   const location = useLocation();
+  const [flippedStatus, setFlippedStatus] = useState(new Array(6).fill(false));
 
+  const handleCardClick = (index) => {
+    // Create a new array with all current statuses
+    const newFlippedStatus = [...flippedStatus];
+    // Toggle the flipped status for the clicked card
+    newFlippedStatus[index] = !newFlippedStatus[index];
+    // Update the state with the new array
+    setFlippedStatus(newFlippedStatus);
+  };
   useEffect(() => {
     if (location.hash === '#about-me') {
       const aboutMeSection = document.getElementById('about-me');
@@ -29,9 +41,9 @@ const HomePage = () => {
       front: (
         <>
       <h3 class="text-2xl font-semibold mb-5">
-  <span class="bg-gradient-to-r from-white to-pink-300 text-transparent bg-clip-text">Afterschool Programs</span>
+  <span class="bg-gradient-to-r from-white to-pink-300 text-transparent bg-clip-text">My School</span>
 </h3>
-          <p>We are in the process of starting Spring afterschool programs at elementary and primary elementary schools!</p>
+          <p>I am currently a junior in Computer Science at the University of Maryland College Park!</p>
         </>
       ),
       back: (
@@ -43,15 +55,16 @@ const HomePage = () => {
     {
       front: (
         <>
-            <h3 class="text-2xl font-semibold mb-8">
-  <span class="bg-gradient-to-r from-purple-200 to-pink-300 text-transparent bg-clip-text">Summer Camps</span>
+            <h3 class="text-2xl font-semibold mb-5">
+  <span class="bg-gradient-to-r from-purple-200 to-pink-300 text-transparent bg-clip-text">Hobbies</span>
 </h3>
-          <p>Join us this summer for the Climate Health Education Initiative Summer Camp! We will have in person and virtual options.</p>
+          <p>I like going to the gym (lifting,cardio) for fun/health, playing Overwatch 2, and coding! </p>
         </>
       ),
       back: (
         <>
-           <h3><a class='text-default'href="/SummerPrograms" >Learn More About This...</a></h3>
+         <img src={mercy} alt="Mercy"  />
+      
        
         </>
       ),
@@ -59,48 +72,53 @@ const HomePage = () => {
     {
       front: (
         <>
-         <h3 class="text-2xl font-semibold mb-8">
-  <span class="bg-gradient-to-r from-purple-200 to-pink-300 text-transparent bg-clip-text">Blog</span>
+         <h3 class="text-2xl font-semibold mb-5">
+  <span class="bg-gradient-to-r from-purple-200 to-pink-300 text-transparent bg-clip-text">Pets</span>
 </h3>
-          <p>Check out our blog that features writing from our Writing and Newsletter Teams! </p>
+          <p>I have a dog (shiba inu) named Yomen! He is a male red shiba and very sweet, he acts like a cat basically. </p>
+        </>
+      ),
+      back: (
+        
+        <> 
+       
+           <img src={yomen} class="mt-3 scale-200 rounded-lg" alt="Yomen, a sweet red Shiba Inu"  />
+ 
+        </>
+        
+      ),className: 'no-padding',
+      
+    },
+    {
+      front: (
+        <>
+          <h3 class="text-2xl font-semibold mb-5">
+  <span class="bg-gradient-to-r from-purple-200 to-pink-300 text-transparent bg-clip-text">
+Music</span>
+</h3>
+          <p>I like various artists like Travis Scott, Playboi Carti, Don Toliver, Metro Boomin, SZA .</p>
         </>
       ),
       back: (
         <>
-           <h3><a class='text-default'href="/SummerPrograms" >Learn More About This...</a></h3>
+          <h3><a class='text-default'href="https://open.spotify.com/user/b59vd13mlimmlpqesv47atclz?si=2d97d56e17604726"  target="_blank"
+        rel="noreferrer" >My Spotify</a></h3>
         </>
       ),
     },
     {
       front: (
         <>
-          <h3 class="text-2xl font-semibold mb-8">
+         <h3 class="text-2xl font-semibold mb-5">
   <span class="bg-gradient-to-r from-purple-200 to-pink-300 text-transparent bg-clip-text">
-Social Media</span>
+Career Interests</span>
 </h3>
-          <p>We utilize various social media platforms such as Instagram to educate the general public.</p>
+          <p>I am interested in full stack web development, AI and machine learning.</p>
         </>
       ),
       back: (
         <>
-          <h3><a class='text-default'href="https://www.instagram.com/climatehealthei/"  target="_blank"
-        rel="noreferrer" >Follow Our Instagram!</a></h3>
-        </>
-      ),
-    },
-    {
-      front: (
-        <>
-         <h3 class="text-2xl font-semibold mb-8">
-  <span class="bg-gradient-to-r from-purple-200 to-pink-300 text-transparent bg-clip-text">
-Events</span>
-</h3>
-          <p>Join us for several events featuring guest speakers of the environmental and public health fields. </p>
-        </>
-      ),
-      back: (
-        <>
-          <h3><a class='text-default'href="/EventsPage" >Learn More About This...</a></h3>
+          <h3><a class='text-default'href="/BlogPage" >My Resume</a></h3>
          
         </>
       ),
@@ -108,19 +126,20 @@ Events</span>
     {
       front: (
         <>
-         <h3 class="text-2xl font-semibold mb-6 ">
+         <h3 class="text-2xl font-semibold mb-5 ">
   <span class="bg-gradient-to-r from-purple-200 to-pink-300 text-transparent bg-clip-text">
-  Fundraisers and donations</span>
+My Linkedin</span>
 </h3>
-<h3 class="text-base">
-          <p>We often host fundraisers and organize donations fundraise for our initiative as well as other organizations such as the Sierra Club!</p>
-          </h3>
+
+          <p>I am interning this summer at Linkedin, click this card to find my Linkedin on the back!</p>
+    
         </>
       ),
       back: (
         <>
       
-  <a class='text-default'href="/SupportUsPage" >Learn More About This...</a>
+  <a class='text-default'href="https://www.linkedin.com/in/emily-z-2803a2247/"target="_blank"
+        rel="noreferrer" >My Linkedin</a>
 
        
         
@@ -178,7 +197,7 @@ Events</span>
         
       </div >
       
-    <div id="about-me">
+    <div id="about-me"> 
       <h1 className="text-6xl ml-10 text-white font-bold mb-10 align-top">Stuff About Me</h1>
 
     
@@ -192,6 +211,7 @@ Events</span>
             key={index}
             frontText={card.front}
             backText={card.back}
+            className={`${flippedStatus[index] ? '' : 'hover-effect'} ${card.className || ''}`}
           />
         ))}
    

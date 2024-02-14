@@ -19,7 +19,7 @@ const FlipCard = ({ frontText, backText }) => {
         {frontText}
       </div>
     
-      <div className="grid-item" onClick={handleClick}>
+      <div className={`grid-item `} onClick={handleClick}>
         {/* back of the card */}
         {backText}
       </div>

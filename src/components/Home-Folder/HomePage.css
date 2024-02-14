@@ -7,8 +7,13 @@
   
  
   }
+.no-padding {
+  padding: 0 !important; /* Use !important to override any other padding rules */
+ 
+}
 
-  
+
+
 
   .earthy {
     
@@ -69,7 +74,7 @@
   
 /* HomePage.css */
 .grid-container {
-  overflow-x: auto;
+  
     min-height:fit-content;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -91,7 +96,10 @@
   }
   
   .grid-item { 
-    
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transition for transform and box-shadow */
+  /* ... other styles ... */
+    position: relative;
+    overflow: hidden; 
     overflow-x: auto;
     min-width:fit-content;
     perspective: 1000px;
@@ -104,11 +112,16 @@
     border-radius: 10px;
     color: rgba(255, 255, 255);
     border: 1px solid rgba(249, 165, 255, 0.7);
-    box-shadow:0 0 10px rgb(255, 142, 229,0.3);
+    box-shadow:0 0  20px rgba(249, 165, 255, 0.4 );
     /* ... other styles ... */
     height: auto; /* Height to fit content */
 
   }
+  .grid-item:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-10px) rotate(-3deg); /* Moves the card up and rotates it a bit */
+  }
+  
   .text-default {
     transition: text-shadow 0.2s ease-in;
 
@@ -122,3 +135,4 @@
     
 
   }
+ 
