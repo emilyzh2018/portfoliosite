@@ -1,0 +1,10 @@
+@media (max-width: 768px) {
+    .top-navbar{
+      padding: 0px; /* Reduce padding */
+      font-size: 0.875rem; /* Reduce font size */
+    }
+  }
+  .TopNavbar{
+    font-size: 0rem; /* Adjust the size as needed */
+  }
+  

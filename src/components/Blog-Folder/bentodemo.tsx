@@ -33,8 +33,8 @@ const Skeleton = () => (
 );
 const items = [
   {
-    title: "The Dawn of Innovation",
-    description: "Explore the birth of groundbreaking ideas and inventions.",
+    title: "Mock Android X App",
+    description: "Developed as part of CodePath Android development course. Mimics functionality of original X/Twitter app.",
     header: <Skeleton />,
     icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
   },
