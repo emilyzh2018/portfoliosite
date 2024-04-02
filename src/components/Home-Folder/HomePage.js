@@ -239,12 +239,10 @@ My Linkedin</span>
     <div id="about-me"> 
       <h1 className="text-6xl ml-10 text-white font-bold mb-10 align-top">Stuff About Me</h1>
 
-    
+     
      
      {/* Grid of boxes */}
-     <div className="max-w-5xl mx-auto px-8">
-      <HoverEffect items={projects} />
-    </div>
+
      <div className="grid-container " >
       
      {cardInfo.map((card, index) => (
@@ -265,8 +263,13 @@ My Linkedin</span>
         </div>
         </div>
     </div>
+    <div className="max-w-10xl mx-auto px-8">
+      <HoverEffect items={projects} />
+    </div>
 </div>
+
 </div>
+
   );
 };
 
