@@ -28,11 +28,6 @@ function App() {
 
   return (
     <BrowserRouter>
-  
-
-
-
-     
         <Routes>
    
         {/* Nesting the other routes under a common layout route */}

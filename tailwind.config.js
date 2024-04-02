@@ -9,7 +9,7 @@ const {
 
 // tailwind.config.js
 module.exports = {
-  content: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
+  content: ["./src/**/*.{html,js,tsx}"],
   darkMode: "class",
   theme: {
     extend: {
